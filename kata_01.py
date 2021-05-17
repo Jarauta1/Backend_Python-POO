@@ -4,7 +4,12 @@ class Alumno():
     apellido = ""
     dni = ""
     edad = 0
-    nota = 0
+
+    # Añadido de kata_02
+    asignaturas = []
+
+    # Quitado de kata_01
+    # nota = 0
 
     # Constructor
     def __init__(self,nombre,apellido,dni,edad):
@@ -28,4 +33,13 @@ class Alumno():
         print(f'Su nombre es {self.nombre} {self.apellido}.')
         print("Con DNI: " + self.dni)
         print("Tiene " + str(self.edad) + " años.")
-        print("Su nota es: " + str(self.nota))
+
+        # Añadido kata_02
+        print(self.asignaturas)
+
+    # Función añadida kata_02
+    def anyadir_asignatura(self, asignatura):
+        self.asignaturas.append(asignatura)
+
+        # Quitado de kata_01
+        # print("Su nota es: " + str(self.nota))

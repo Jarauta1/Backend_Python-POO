@@ -1,13 +1,26 @@
 import kata_01
+import kata_02
 
 
 if __name__ == '__main__':
-    diego = kata_01.Alumno("Diego", "Jarauta", "00000000A", 33)
+    # Quitado kata_01
+    # diego = kata_01.Alumno("Diego", "Jarauta", "00000000A", 33)
+    # diego.Mostrar_alumno()
+    # diego.Saludar()
+    # diego.Nota(8)
+    # diego.Cumple()
+    # diego.Mostrar_alumno()
 
-    diego.Mostrar_alumno()
-    diego.Saludar()
-    diego.Nota(8)
-    diego.Cumple()
+    #Añadido kata_02
+    matematicas = kata_02.Asignatura("Matemáticas")
+    fisica = kata_02.Asignatura("Fisica")
+    matematicas.anyadir_nota(8)
+
+    diego = kata_01.Alumno("Diego", "Jarauta", "000000000A", 33)
+
+    diego.anyadir_asignatura(matematicas)
+    diego.anyadir_asignatura(fisica)
+
     diego.Mostrar_alumno()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
