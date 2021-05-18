@@ -3,6 +3,7 @@ import kata_02
 
 class Clase():
     # Propiedades
+    __id = 0  # Añadido kata_04
     profesor = None
     alumnos = []
     asignaturas = []
@@ -11,6 +12,12 @@ class Clase():
     def __init__(self, alumnos, asignaturas):
         self.cargar_alumnos(alumnos)
         self.cargar_asignatura(asignaturas)
+
+    # Añadido kata_04
+    # Get / set
+    @property
+    def id(self):
+        return self.__id
 
     # Métodos
     def anyadir_asignatura(self, asignatura):

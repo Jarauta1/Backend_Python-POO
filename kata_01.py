@@ -2,8 +2,8 @@ class Alumno():
     # Propiedades
     nombre = ""
     apellido = ""
-    dni = ""
-    edad = 0
+    __dni = "" # Modificado kata_04 de dni a __dni
+    __edad = 0 # Modificado kata_04 de edad a __edad
 
     # Añadido de kata_02
     asignaturas = []
@@ -15,8 +15,25 @@ class Alumno():
     def __init__(self, nombre, apellido, dni, edad):
         self.nombre = nombre
         self.apellido = apellido
-        self.dni = dni
-        self.edad = edad
+        self.__dni = dni # Modificado kata_04 de dni a __dni
+        self.__edad = edad # Modificado kata_04 de edad a __edad
+
+    # Añadido kata_04
+    # Get / Set
+    @property
+    def dni(self):
+        return self.__dni
+
+    @property
+    def edad(self):
+        return self.__edad
+
+    @edad.setter
+    def edad(self, edad):
+        if (edad > 0 and edad < 100):
+            self.__edad = edad
+        else:
+            raise TypeError("Edad fuera del rango")
 
     # Metodos
     def Saludar(self):
@@ -27,12 +44,12 @@ class Alumno():
             self.nota = nota
 
     def Cumple(self):
-        self.edad += 1
+        self.__edad += 1 # Modificado kata_04 de edad a __edad
 
     def Mostrar_alumno(self):
         print(f'Su nombre es {self.nombre} {self.apellido}.')
-        print("Con DNI: " + self.dni)
-        print("Tiene " + str(self.edad) + " años.")
+        print("Con DNI: " + self.__dni) # Modificado kata_04 de dni a dni
+        print("Tiene " + str(self.__edad) + " años.") # Modificado kata_04 de edad a __edad
 
         # Añadido kata_02
         print(self.asignaturas)

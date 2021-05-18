@@ -21,10 +21,20 @@ if __name__ == '__main__':
     # diego.anyadir_asignatura(fisica)
     # diego.Mostrar_alumno()
 
-    # Añadido kata_03
-    alumnos = ["Manuel", "Ana", "Jorge"]
-    asignaturas = ["Matematicas", "Fisica", "Sociales", "Gimnasia"]
-    aula = kata_03.Clase(alumnos, asignaturas)
-    aula.mostrar()
+    # Quitado kata_03
+    # alumnos = ["Manuel", "Ana", "Jorge"]
+    # asignaturas = ["Matematicas", "Fisica", "Sociales", "Gimnasia"]
+    # aula = kata_03.Clase(alumnos, asignaturas)
+    # aula.mostrar()
+
+    # Añadido kata_04
+    diego = kata_01.Alumno("Diego", "Jarauta", "00000000X", 33)
+    print(diego.dni)
+    print(diego.edad)
+    # diego.dni = ""
+    diego.edad = 50
+    print(diego.dni)
+    print(diego.edad)
+    diego.edad = 101
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
