@@ -12,7 +12,7 @@ class Alumno():
     # nota = 0
 
     # Constructor
-    def __init__(self,nombre,apellido,dni,edad):
+    def __init__(self, nombre, apellido, dni, edad):
         self.nombre = nombre
         self.apellido = apellido
         self.dni = dni
@@ -23,7 +23,7 @@ class Alumno():
         print("Hola " + self.nombre)
 
     def Nota(self, nota):
-        if(nota <= 10 and nota >= 0):
+        if (nota <= 10 and nota >= 0):
             self.nota = nota
 
     def Cumple(self):
