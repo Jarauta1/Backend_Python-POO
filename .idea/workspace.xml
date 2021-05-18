@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6c66fa5-2bc5-410a-ad9c-49f8c10440f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/kata_01.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kata_02.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kata_03.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
