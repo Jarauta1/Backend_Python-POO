@@ -13,3 +13,8 @@ if __name__ == '__main__':
 
     #Mostrar serie creada
     print(videojuego1)
+
+    serie1.entregar()
+    serie1.isEntregado()
+    serie1.devolver()
+    serie1.isEntregado()

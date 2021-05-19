@@ -1,4 +1,6 @@
-class Serie():
+import interfaz
+
+class Serie(interfaz.Entregable):
     # Propiedades
     __titulo = ""
     __temporadas = 3
@@ -13,6 +15,7 @@ class Serie():
         self.__creador = creador
 
     # Métodos mágicos
+    # toString()
     def __str__(self):
         out = "Serie: \n Titulo: {0} - Temporadas: {1} - Genero: {2} - Creador: {3}"
         return out.format(self.titulo, self.temporadas, self.genero, self.creador)

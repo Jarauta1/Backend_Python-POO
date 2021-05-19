@@ -1,4 +1,6 @@
-class Videojuego():
+import interfaz
+
+class Videojuego(interfaz.Entregable):
     # Propiedades
     __titulo = ""
     __horas = 10
@@ -13,6 +15,7 @@ class Videojuego():
         self.__companyia = companyia
 
     # Métodos mágicos
+    # toString()
     def __str__(self):
         out = "Videojuego: \n Titulo: {0} - Horas: {1} - Genero: {2} - Compañía: {3}"
         return out.format(self.titulo, self.horas, self.genero, self.companyia)
@@ -51,3 +54,14 @@ class Videojuego():
         self.__companyia = companyia
 
     # Métodos
+    def entregar(self):
+        self.entregado = True
+
+    def devolver(self):
+        self.entregado = False
+
+    def isEntregado(self):
+        return print(self.entregado)
+
+    def compareTo(self):
+        pass
