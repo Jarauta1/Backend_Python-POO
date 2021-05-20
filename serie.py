@@ -9,10 +9,11 @@ class Serie(interfaz.Entregable):
     __creador = ""
 
     # Constructor
-    def __init__(self, titulo, genero, creador):
+    def __init__(self, titulo, genero, creador, temporadas = 3):
         self.__titulo = titulo
         self.__genero = genero
         self.__creador = creador
+        self.__temporadas = temporadas
 
     # Métodos mágicos
     # toString()

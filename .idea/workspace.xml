@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6c66fa5-2bc5-410a-ad9c-49f8c10440f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/interfaz.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaz.py" beforeDir="false" afterPath="$PROJECT_DIR$/interfaz.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serie.py" beforeDir="false" afterPath="$PROJECT_DIR$/serie.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/videojuego.py" beforeDir="false" afterPath="$PROJECT_DIR$/videojuego.py" afterDir="false" />

@@ -9,10 +9,11 @@ class Videojuego(interfaz.Entregable):
     __companyia = ""
 
     # Constructor
-    def __init__(self, titulo, genero, companyia):
+    def __init__(self, titulo, genero, companyia,horas = 10):
         self.__titulo = titulo
         self.__genero = genero
         self.__companyia = companyia
+        self.__horas = horas
 
     # Métodos mágicos
     # toString()
