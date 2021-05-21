@@ -16,10 +16,9 @@ class Serie(interfaz.Entregable):
         self.__temporadas = temporadas
 
     # Métodos mágicos
-    # toString()
     def __str__(self):
-        out = "Serie: \n Titulo: {0} - Temporadas: {1} - Genero: {2} - Creador: {3}"
-        return out.format(self.titulo, self.temporadas, self.genero, self.creador)
+        out = "Serie: \n Titulo: {0} - Temporadas: {1} - Genero: {2} - Creador: {3}" #Estructura para mostrar la info de la serie
+        return out.format(self.titulo, self.temporadas, self.genero, self.creador) #Completar la info de salida con las propiedades
 
     # Get / Set
     @property

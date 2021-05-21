@@ -18,8 +18,8 @@ class Videojuego(interfaz.Entregable):
     # Métodos mágicos
     # toString()
     def __str__(self):
-        out = "Videojuego: \n Titulo: {0} - Horas: {1} - Genero: {2} - Compañía: {3}"
-        return out.format(self.titulo, self.horas, self.genero, self.companyia)
+        out = "Videojuego: \n Titulo: {0} - Horas: {1} - Genero: {2} - Compañía: {3}" #Estructura para mostrar la info del videojuego
+        return out.format(self.titulo, self.horas, self.genero, self.companyia) #Completar la info de salida con las propiedades
 
     # Get / Set
     @property
